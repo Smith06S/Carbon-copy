@@ -8,9 +8,9 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 20px;
     border-top: 1px solid #ccc;
+    height:150px;
 }
 
 nav ul {
@@ -36,9 +36,8 @@ header {
 #sectionImg {
     display: flex;
     justify-content: center;
-    margin: 2% 2%;
     box-sizing: border-box;
-    gap: 0;
+    height: 250x;
 }
 
 /* Styling for the images */
@@ -65,19 +64,45 @@ header {
     float: left;
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 20px;
 }
 
 /* Contact */
 #contact {
+    position: relative;
     background-color: green;
     width: 50%;
     height: 300px;
     float: left;
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 20px;
 }
+
+#contact button {
+    position: absolute;
+    width: 30%; 
+    right: 20px;
+    padding: 10px; 
+    border-radius: 50px;
+    font-size: 70%; 
+    box-sizing: border-box; 
+    cursor: pointer; 
+}
+
+
+/* Input Field */
+#contact input {
+    display: block; 
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; 
+    font-size: 1rem; 
+}
+
+
 
 /* Handle Floats */
 #about::after, #contact::after {
