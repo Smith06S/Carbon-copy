@@ -1,0 +1,146 @@
+/* General Reset */
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 5px;
+}
+
+/* Styling for #sectionImg specifically */
+#sectionImg {
+    display: flex;
+    justify-content: center;
+    margin: 2% 2%;
+    box-sizing: border-box;
+    gap: 0;
+}
+
+/* Styling for the images */
+#sectionImg img {
+    width: calc(33.33%);
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+/* Band Info */
+#band {
+    background-color: aqua;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* About */
+#about {
+    background-color: red;
+    width: 50%;
+    height: 300px;
+    float: left;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contact */
+#contact {
+    background-color: green;
+    width: 50%;
+    height: 300px;
+    float: left;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Handle Floats */
+#about::after, #contact::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Dashboard Section */
+#dashboard {
+    display: flex; 
+    flex-direction: column;
+    background-color: grey; 
+    width: 100%; 
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+#dashboard h1 {
+    font-size: 2rem; 
+    color: white;
+    margin-bottom: 20px; 
+    text-align: left;
+}
+
+#dashboard > section {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start;
+    gap: 20px; 
+    width: 100%; 
+    margin-top: 20px; 
+}
+
+#dashboard > section > section {
+    flex: 1; 
+    max-width: 30%; 
+    padding: 10px;
+    background-color: lightgrey; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+}
