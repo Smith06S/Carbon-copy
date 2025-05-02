@@ -1,17 +1,24 @@
 /* General Reset */
 body {
     margin: 0;
-    box-sizing: border-box;
-}
+    font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .logo {
+    font-size: 3rem;
+    
+  }
 
 /* Navigation */
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    border-top: 1px solid #ccc;
-    height:150px;
-}
+    align-items: flex-start;
+    height: 200px;
+    padding: 40px;
+  }
 
 nav ul {
     display: flex;
@@ -19,153 +26,241 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-}
+    font-size: 3rem;
+    font-weight: 400;
+  }
 
 nav ul li a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+nav ul li:nth-child(1) a {
+    color: #668cff;
+}
+
+nav ul li:nth-child(2) a {
+    color: #d3d3d3;
+}
+
+nav ul li:nth-child(3) a {
+    color: #b3ff99;
 }
 
 /* Header */
-header {
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    padding: 5px;
-}
-
-/* Styling for #sectionImg specifically */
+  header, h1 {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+  header{
+    font-weight: 300;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+    text-align: center;
+  }
+  
+  h1 {
+    font-weight: 650;
+    font-size: 3rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+/* Image Section */
 #sectionImg {
     display: flex;
     justify-content: center;
     box-sizing: border-box;
-    height: 250x;
+    height: 300px;
 }
 
-/* Styling for the images */
 #sectionImg img {
-    width: calc(33.33%);
+    width: 33.33%;
     height: auto;
-    margin: 0;
-    padding: 0;
 }
+
 
 /* Band Info */
 #band {
-    background-color: aqua;
+    background-color: #668cff;
+    color: black;
     width: 100%;
-    padding: 20px;
+    min-height: 200px; /* Adjust this as a minimum height */
+    padding: 30px;
+    padding-left: 35px;
     box-sizing: border-box;
 }
 
 /* About */
+
+
 #about {
-    background-color: red;
+    background-color: #d3d3d3;
     width: 50%;
-    height: 300px;
+    min-height: 300px; /* Adjust this as a minimum height */
     float: left;
     box-sizing: border-box;
     margin: 0;
-    padding: 20px;
+    padding: 30px;
+    padding-left: 35px;
+    color: black;
 }
 
 /* Contact */
+
 #contact {
     position: relative;
-    background-color: green;
+    background-color: #b3ff99;
     width: 50%;
-    height: 300px;
+    min-height: 300px; /* Adjust this as a minimum height */
     float: left;
     box-sizing: border-box;
     margin: 0;
-    padding: 20px;
+    padding: 30px;
+    padding-left: 35px;
 }
 
 #contact button {
     position: absolute;
-    width: 30%; 
+    width: 15%;
     right: 20px;
-    padding: 10px; 
+    padding: 10px;
     border-radius: 50px;
-    font-size: 70%; 
-    box-sizing: border-box; 
-    cursor: pointer; 
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 200; 
 }
+  
 
-
-/* Input Field */
 #contact input {
-    display: block; 
+    display: block;
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     box-sizing: border-box;
-    border: 1px solid #ccc; 
-    font-size: 1rem; 
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-weight: 200; 
 }
 
-
-
-/* Handle Floats */
-#about::after, #contact::after {
-    content: "";
-    display: table;
-    clear: both;
+#band b,
+#about b,
+#contact b,
+#contact button,
+#contact input {
+  font-weight: 300; 
 }
 
-/* Dashboard Section */
+/* Dashboard */
 #dashboard {
-    display: flex; 
-    flex-direction: column;
-    background-color: grey; 
-    width: 100%; 
-    padding: 20px; 
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 150px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
+
 
 #dashboard h1 {
-    font-size: 2rem; 
-    color: white;
-    margin-bottom: 20px; 
+    font-size: 2rem;
+    margin: 0 0 20px 0; 
     text-align: left;
 }
 
+  #dashboard h2 {
+    margin-bottom: 0px; 
+  }
+
+  #dashboard section p {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+  
+  
+  #dashboard h3 {
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 0;       
+    margin-bottom: 10px; 
+  }
+
+
 #dashboard > section {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: flex-start;
-    gap: 20px; 
-    width: 100%; 
-    margin-top: 20px; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
+
+
 #dashboard > section > section {
-    flex: 1; 
-    max-width: 30%; 
-    padding: 10px;
-    background-color: lightgrey; 
-    border: 1px solid #ccc; 
-    box-sizing: border-box; 
+    flex: 1 1 calc((100% - 40px) / 3); 
+    min-width: 250px;
+    border: 1.5px solid rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#band h2,
+#about h2,
+#contact h2{
+  color: white;
+}
+
+#band h2,
+#about h2,
+#contact h2,
+#dashboard h1 {
+    font-weight: 400; 
+    font-size: 2rem;
+}
+
+#dashboard h2{
+    font-weight: 400; 
+    font-size: 1.5rem;
 }
 
 /* Footer */
 footer {
+    position: relative;
+    background-color: #f9f9f9;
+    padding: 20px 30px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 20px;
-    border-top: 1px solid #ccc;
+    overflow: hidden;
 }
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 30px; 
+    right: 30px; 
+    height: 1px;
+    background-color: black;
+}
+
 
 footer ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    text-align: right;
+    text-decoration: underline;
+    font-size: 1.1rem;           
 }
 
 footer ul li {
-    display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
-footer ul li a {
-    text-decoration: none;
-}
