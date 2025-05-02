@@ -88,8 +88,9 @@ h1 {
     color: black; /* Text color */
     width: 100%;
     min-height: 200px; /* Minimum height for the section */
-    padding: 30px;
-    padding-left: 35px; /* Left padding */
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
     box-sizing: border-box;
 }
 
@@ -101,9 +102,9 @@ h1 {
     float: left; /* Float left for layout */
     box-sizing: border-box;
     margin: 0;
-    padding: 30px;
-    padding-left: 35px; /* Left padding */
-    color: black; /* Text color */
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 /********************* Contact *********************/
@@ -115,14 +116,15 @@ h1 {
     float: left; /* Float left for layout */
     box-sizing: border-box;
     margin: 0;
-    padding: 30px;
-    padding-left: 35px; /* Left padding */
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 #contact button {
     position: absolute; /* Absolute positioning */
     width: 15%; /* Set width of the button */
-    right: 20px; /* Position button on the right */
+    right: 100px; /* Position button on the right */
     padding: 10px;
     border-radius: 50px; /* Rounded button */
     box-sizing: border-box;
@@ -150,7 +152,7 @@ h1 {
 /********************* Dashboard *********************/
 #dashboard {
     width: 100%;
-    padding: 30px;
+    padding: 100px;
     margin-bottom: 150px;
     box-sizing: border-box;
     display: flex;
@@ -217,7 +219,7 @@ h1 {
 footer {
     position: relative;
     background-color: #f9f9f9; /* Light footer background */
-    padding: 20px 30px;
+    padding: 20px 100px;
     display: flex;
     justify-content: space-between; /* Space between footer items */
     align-items: flex-start;
@@ -228,8 +230,8 @@ footer::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 30px; /* Left margin */
-    right: 30px; /* Right margin */
+    left: 100px; /* Left margin */
+    right: 100px; /* Right margin */
     height: 1px; /* Thin line */
     background-color: black; /* Black line */
 }
