@@ -1,241 +1,225 @@
-/* General Reset */
+/********************* General *********************/
 body {
-    margin: 0;
-    font-family: "Segoe UI", "Helvetica Neue", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+    margin: 0; /* Remove default margin */
+    font-family: "Segoe UI", "Helvetica Neue", sans-serif; /* Set a clean font */
+    -webkit-font-smoothing: antialiased; /* Smooth font rendering */
+    -moz-osx-font-smoothing: grayscale; /* Smooth font rendering on Firefox */
+}
 
-  .logo {
-    font-size: 3rem;
-    
-  }
+/********************* Logo *********************/
+.logo {
+    font-size: 3rem; /* Set logo size */
+}
 
-/* Navigation */
+/********************* Navigation *********************/
 nav {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    height: 200px;
-    padding: 40px;
-  }
+    height: 200px; /* Set navigation height */
+    padding: 40px; /* Add padding around navigation */
+}
 
 nav ul {
     display: flex;
-    gap: 20px;
-    list-style: none;
+    gap: 20px; /* Space between nav items */
+    list-style: none; /* Remove default list styling */
     padding: 0;
     margin: 0;
-    font-size: 3rem;
+    font-size: 3rem; /* Set font size */
     font-weight: 400;
-  }
-
-nav ul li a {
-  text-decoration: none;
 }
 
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+}
+
+/********************* Navigation link colors *********************/
 nav ul li:nth-child(1) a {
-    color: #668cff;
+    color: #668cff; /* Blue color for first link */
 }
 
 nav ul li:nth-child(2) a {
-    color: #d3d3d3;
+    color: #d3d3d3; /* Light grey for second link */
 }
 
 nav ul li:nth-child(3) a {
-    color: #b3ff99;
+    color: #b3ff99; /* Light green for third link */
 }
 
-/* Header */
-  header, h1 {
-    margin-left: 100px;
-    margin-right: 100px;
-  }
-  
-  header{
-    font-weight: 300;
+/********************* Header *********************/
+header, h1 {
+    margin-left: 100px; /* Left margin */
+    margin-right: 100px; /* Right margin */
+}
+
+header {
+    font-weight: 300; /* Light font weight for header */
     padding-top: 10px;
     padding-bottom: 10px;
-    border-top: 1px solid #888;
-    border-bottom: 1px solid #888;
-    text-align: center;
-  }
-  
-  h1 {
-    font-weight: 650;
-    font-size: 3rem;
+    border-top: 1px solid #888; /* Top border */
+    border-bottom: 1px solid #888; /* Bottom border */
+    text-align: center; /* Center text */
+}
+
+h1 {
+    font-weight: 650; /* Bold font weight */
+    font-size: 3rem; /* Large font size */
     padding-top: 20px;
     padding-bottom: 20px;
-  }
-  
-/* Image Section */
+}
+
+/********************* Image *********************/
 #sectionImg {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the image */
     box-sizing: border-box;
-    height: 300px;
+    height: 300px; /* Set height of image section */
 }
 
 #sectionImg img {
-    width: 33.33%;
-    height: auto;
+    width: 33.33%; /* Images take up one-third of the section */
+    height: auto; /* Maintain aspect ratio */
 }
 
-
-/* Band Info */
+/********************* Band *********************/
 #band {
-    background-color: #668cff;
-    color: black;
+    background-color: #668cff; /* Set background color */
+    color: black; /* Text color */
     width: 100%;
-    min-height: 200px; /* Adjust this as a minimum height */
+    min-height: 200px; /* Minimum height for the section */
     padding: 30px;
-    padding-left: 35px;
+    padding-left: 35px; /* Left padding */
     box-sizing: border-box;
 }
 
-/* About */
-
-
+/********************* About *********************/
 #about {
-    background-color: #d3d3d3;
-    width: 50%;
-    min-height: 300px; /* Adjust this as a minimum height */
-    float: left;
+    background-color: #d3d3d3; /* Light grey background */
+    width: 50%; /* Take up half of the container */
+    min-height: 300px; /* Minimum height for the section */
+    float: left; /* Float left for layout */
     box-sizing: border-box;
     margin: 0;
     padding: 30px;
-    padding-left: 35px;
-    color: black;
+    padding-left: 35px; /* Left padding */
+    color: black; /* Text color */
 }
 
-/* Contact */
-
+/********************* Contact *********************/
 #contact {
-    position: relative;
-    background-color: #b3ff99;
-    width: 50%;
-    min-height: 300px; /* Adjust this as a minimum height */
-    float: left;
+    position: relative; /* Allows positioning of elements within */
+    background-color: #b3ff99; /* Light green background */
+    width: 50%; /* Take up half of the container */
+    min-height: 300px; /* Minimum height for the section */
+    float: left; /* Float left for layout */
     box-sizing: border-box;
     margin: 0;
     padding: 30px;
-    padding-left: 35px;
+    padding-left: 35px; /* Left padding */
 }
 
 #contact button {
-    position: absolute;
-    width: 15%;
-    right: 20px;
+    position: absolute; /* Absolute positioning */
+    width: 15%; /* Set width of the button */
+    right: 20px; /* Position button on the right */
     padding: 10px;
-    border-radius: 50px;
+    border-radius: 50px; /* Rounded button */
     box-sizing: border-box;
     cursor: pointer;
     font-family: inherit;
-    font-weight: 200; 
+    font-weight: 200;
 }
-  
 
 #contact input {
     display: block;
-    width: 100%;
+    width: 100%; /* Full width input */
     padding: 10px;
     margin-bottom: 20px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 1px solid #ccc; /* Light border */
     font-family: inherit;
-    font-weight: 200; 
+    font-weight: 200;
 }
 
-#band b,
-#about b,
-#contact b,
-#contact button,
-#contact input {
-  font-weight: 300; 
+/* Text elements */
+#band b, #about b, #contact b, #contact button, #contact input {
+    font-weight: 300; /* Light font weight for these elements */
 }
 
-/* Dashboard */
+/********************* Dashboard *********************/
 #dashboard {
     width: 100%;
     padding: 30px;
     margin-bottom: 150px;
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Stack sections vertically */
     align-items: stretch;
 }
 
-
 #dashboard h1 {
-    font-size: 2rem;
-    margin: 0 0 20px 0; 
-    text-align: left;
+    font-size: 2rem; /* Set font size */
+    margin: 0 0 20px 0; /* Margin below the header */
+    text-align: left; /* Align text to the left */
 }
 
-  #dashboard h2 {
-    margin-bottom: 0px; 
-  }
+#dashboard h2 {
+    margin-bottom: 0px; /* Remove bottom margin */
+}
 
-  #dashboard section p {
-    font-size: 1rem;
+#dashboard section p {
+    font-size: 1rem; /* Set paragraph font size */
     font-weight: 300;
-    line-height: 1.5;
-  }
-  
-  
-  #dashboard h3 {
+    line-height: 1.5; /* Line height for better readability */
+}
+
+#dashboard h3 {
     font-weight: 400;
     font-size: 0.8rem;
-    color: rgba(0, 0, 0, 0.5);
-    margin-top: 0;       
-    margin-bottom: 10px; 
-  }
-
+    color: rgba(0, 0, 0, 0.5); /* Light grey color */
+    margin-top: 0;
+    margin-bottom: 10px; /* Margin below the element */
+}
 
 #dashboard > section {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-wrap: wrap; /* Allow wrapping of elements */
+    gap: 20px; /* Gap between sections */
     width: 100%;
     box-sizing: border-box;
 }
 
-
-
 #dashboard > section > section {
-    flex: 1 1 calc((100% - 40px) / 3); 
+    flex: 1 1 calc((100% - 40px) / 3); /* Responsive layout: three columns */
     min-width: 250px;
-    border: 1.5px solid rgba(0, 0, 0, 0.3);
+    border: 1.5px solid rgba(0, 0, 0, 0.3); /* Light border */
     padding: 20px;
     box-sizing: border-box;
 }
 
-#band h2,
-#about h2,
-#contact h2{
-  color: white;
+/* Section Titles */
+#band h2, #about h2, #contact h2 {
+    color: white; /* White text color */
 }
 
-#band h2,
-#about h2,
-#contact h2,
-#dashboard h1 {
-    font-weight: 400; 
-    font-size: 2rem;
+#band h2, #about h2, #contact h2, #dashboard h1 {
+    font-weight: 400;
+    font-size: 2rem; /* Font size for titles */
 }
 
-#dashboard h2{
-    font-weight: 400; 
+#dashboard h2 {
+    font-weight: 400;
     font-size: 1.5rem;
 }
 
-/* Footer */
+/********************* Footer *********************/
 footer {
     position: relative;
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Light footer background */
     padding: 20px 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Space between footer items */
     align-items: flex-start;
     overflow: hidden;
 }
@@ -244,23 +228,21 @@ footer::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 30px; 
-    right: 30px; 
-    height: 1px;
-    background-color: black;
+    left: 30px; /* Left margin */
+    right: 30px; /* Right margin */
+    height: 1px; /* Thin line */
+    background-color: black; /* Black line */
 }
-
 
 footer ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: right;
-    text-decoration: underline;
-    font-size: 1.1rem;           
+    text-align: right; /* Right-align the footer links */
+    text-decoration: underline; /* Underline links */
+    font-size: 1.1rem;
 }
 
 footer ul li {
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Margin between list items */
 }
-
