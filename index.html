@@ -6,23 +6,6 @@
 </head>
 
 <body>
-    <!--
-    <nav>
-        <div>Placeholder inc.</div>
-        <ul>
-          <li><a href="#band">Band</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      
-      <header>
-        E vola, vola, si sa, sempre più in alto si va, e vola, vola con me, il mondo è matto perché, 
-        e se l'amore non c'è, basta una sola canzone, per far confusione fuori e dentro di te
-      </header>
-
-    <h1>Discover this new song</h1>
-    -->
 
     <nav>
         <div class="logo">Sarà perché ti amo</div>
@@ -33,22 +16,14 @@
         </ul>
       </nav>
     
-      <header>
-        Che confusione, sarà perché ti amo
-è un emozione, che cresce piano piano
-stringimi forte e stammi più vicino
-se ci sto bene sarà perché ti amo
-io canto al ritmo del dolce tuo respiro
-è primavera, sarà perché ti amo
-cade una stella...
-      </header>
+      <header id="quoteRandom"></header>
     
       <h1>Welcome to Placeholder inc. !</h1>
 
     <section id="sectionImg">
-        <img src="photo/meInnamoroDeTi.jpg" alt="Sarà perché ti amo">
-        <img src="photo/Ricchi-e-Poveri.webp" alt="Ricchi e Poveri">
-        <img src="photo/sanremo_ricchi_e_poveri.jpg" alt="E Penso A Te">
+        <img src="photo/meInnamoroDeTi.jpg" alt="Sarà perché ti amo" id="img1" onclick="switchImage()">
+        <img src="photo/Ricchi-e-Poveri.webp" alt="Ricchi e Poveri" onclick="switchImage()">
+        <img src="photo/sanremo_ricchi_e_poveri.jpg" alt="E Penso A Te" id="img2" onclick="switchImage()">
     </section>
 
     <section id="band">
@@ -71,30 +46,33 @@ cade una stella...
     <section id="contact">
         <h2>Contact</h2>
         <p>Are you interested in this band?</p>
-        <input placeholder="Your name">
-        <button>Introduce yourself</button>
+        <input placeholder="Your name" id="UserName">
+        <button onclick="getName()">Introduce yourself</button>
     </section>
 
     <section id="dashboard">
         <h1>Concerts</h1>
         <section>
-            <section>
+            <section onclick="article('VIVA ITALIA', 'May 31 – Aachen, Germany', 'On May 31, the Tivoli Stadium in Aachen, Germany, will transform into a vibrant stage where the spirit of Italy comes alive through music, passion, and an electrifying atmosphere. Under the banner of VIVA ITALIA, this spectacular event promises an unforgettable evening that bridges cultures, blending timeless Italian melodies with modern energy to captivate and unite the audience. Italy has long been synonymous with musical excellence, boasting legendary artists and iconic songs that have transcended borders, winning hearts across generations. From classic ballads that evoke deep emotions to upbeat tunes that make it impossible to stand still, Italian music carries a unique charm that resonates far beyond its homeland. VIVA ITALIA is designed to honor this rich tradition, bringing together a lineup of talented musicians ready to deliver a powerhouse performance that will have the German crowd singing along to the most beloved Italian hits. As the sun sets over Aachen, Tivoli Stadium will come alive with dazzling lights, an electrifying stage setup, and a wave of anticipation that sweeps through the crowd. This isn’t just a concert—it’s an immersive experience, a journey through sound that transports listeners straight to the heart of Italy. Whether you\'re a devoted fan of Italian classics or discovering these timeless tunes for the first time, the magnetic energy of the evening is sure to leave an impression. The setlist will feature a dynamic mix, from legendary songs that shaped Italian music history to contemporary hits infused with modern flair. Expect soaring vocals, powerful instrumentals, and an atmosphere where every note tells a story. With an audience eager to join in, the Tivoli Stadium will echo with voices singing in unison, a testament to the universal appeal of Italian music. Beyond the melodies, VIVA ITALIA embodies something more profound—cultural connection. It is a celebration of heritage, an opportunity for people from different backgrounds to share in the joy and passion that music brings. In the heart of Germany, for one thrilling evening, Italy\'s most cherished sounds will take center stage, turning the stadium into a place of unity, rhythm, and unforgettable moments. As the final notes ring out and the night comes to a close, the echoes of VIVA ITALIA will linger in the hearts of all who experienced it. More than just a performance, it will be a declaration—a tribute to Italian music’s enduring magic and its ability to bring people together, no matter where in the world they may be. Are you ready to sing along, feel the rhythm, and celebrate the timeless power of Italian music? VIVA ITALIA awaits! 🎶🇮🇹')">
                 <h2>VIVA ITALIA</h2>
                 <h3>May 31 – Aachen, Germany</h3>
                 <p>A powerful tribute to Italian music comes to life at the iconic Tivoli Stadium. A thrilling evening that blends tradition and modern flair, designed to get the German crowd singing along to the most beloved Italian hits.</p>
             </section>
-            <section>
+            <section onclick="article('Rome in Music', 'June 19 – Rome, Italy', 'On June 19, in the heart of Rome, a spellbinding celebration of Italian sound and soul will unfold at the magnificent Auditorium Parco della Musica. Rome in Music is not merely a concert—it is an ode to the artistry, passion, and poetry that define Italy’s musical heritage. In one of the city’s most iconic venues, every note and lyric will resonate through the grand halls, weaving a captivating tapestry of melodies that evoke deep emotions and cherished memories. Music has always been the beating heart of Rome—a city steeped in history, culture, and artistic brilliance. From the timeless ballads of legendary artists to contemporary compositions that carry Italy’s musical legacy forward, Rome in Music is crafted to honor both past and present. It promises a refined and heartfelt evening where each performance will be a tribute to the magic of Italian songwriting, enveloping the audience in its expressive beauty. The Auditorium Parco della Musica, with its world-class acoustics and architectural grandeur, provides the perfect setting for this special event. Surrounded by the Eternal City’s rich history, attendees will experience a performance that feels deeply personal yet universally moving. Whether it’s the poignant storytelling found in Italian lyrics or the soaring arrangements that stir the soul, Rome in Music will capture the essence of Italy in every measure. Wth an exquisite setlist carefully curated to highlight the country’s most cherished songs, listeners can expect a blend of nostalgia and innovation. Classical melodies will intertwine with modern interpretations, ensuring an evening filled with breathtaking moments that showcase the versatility and artistry of Italian musicians. Each performance will transport the audience through soundscapes that tell stories of love, triumph, and longing—all themes that have long been at the core of Italian music. More than just a concert, Rome in Music is a cultural experience, a night where emotions and melodies merge effortlessly in a setting that has hosted some of the greatest names in music. With Rome’s timeless grandeur as its backdrop, this event will be an unforgettable journey—a tribute to the country’s musical genius, brought to life through impeccable performances and unwavering passion. As the final notes linger in the air, and the lights fade into the Roman night, Rome in Music will leave behind echoes of harmony and connection—proof that music remains one of the most powerful ways to unite, inspire, and move the human spirit. Get ready to immerse yourself in the magic of Rome in Music, where Italy’s sound and soul shine brighter than ever. 🎶🇮🇹')">
                 <h2>Rome in Music</h2>
                 <h3>June 19 – Rome, Italy</h3>
                 <p>In the heart of the Eternal City, the Auditorium Parco della Musica hosts a special evening celebrating Italian sound and soul. A refined and heartfelt event where music and lyrics echo in one of Rome’s most iconic venues.</p>
             </section>
-            <section>
+            <section onclick="article('VIVA LA MUSICA', 'June 28 – Banska Bystrica, Slovakia', 'On June 28, the picturesque open-air amphitheater in Banska Bystrica will be transformed into a stage bursting with the energy and passion of Italian music. VIVA LA MUSICA is not just an event—it’s a spectacular tribute to the rhythm, joy, and emotional depth of Italy’s musical heritage, bringing its infectious spirit straight to the heart of Slovakia. Italian music has a remarkable ability to transcend borders, touching souls and inspiring audiences worldwide. Whether through soaring ballads that stir emotions or electrifying beats that demand movement, Italian melodies create an atmosphere of warmth, nostalgia, and unbreakable connection. On this special summer evening, the amphitheater will resound with harmonies that span generations, uniting the crowd through the shared language of music. As the sun dips below the Slovak skyline, the air will fill with anticipation, and the first notes will ring out—immediately transporting listeners to the lively piazzas of Italy. The setlist will be a vibrant mix of classics and contemporary hits, each infused with the unmistakable passion that defines Italian artistry. From beloved anthems known across the world to fresh, dynamic tunes capturing today’s musical evolution, VIVA LA MUSICA promises an unforgettable sonic journey. More than just a concert, this night is an experience—a celebration of culture, emotion, and connection. It invites the audience to sing along, dance freely, and immerse themselves in the exuberant essence of Italian music. Every lyric tells a story, every rhythm sparks a memory, and every moment feels like a bridge between worlds. Banska Bystrica’s open-air amphitheater provides the perfect backdrop for this celebration, allowing music to flow uninhibited under the night sky. It is a place where voices will merge, where melodies will linger in the air long after the final encore, and where the spirit of Italy will find a second home in Slovakia. As the evening draws to a close, the echoes of VIVA LA MUSICA will remain—a testament to the power of live performance and the joy that music brings. Whether you’re a lifelong fan of Italian songs or discovering them for the first time, this is an event where sound meets soul, and where every beat is an invitation to celebrate together. Get ready to feel the rhythm, embrace the passion, and let music take you on a journey like no other. VIVA LA MUSICA is here to ignite hearts and unite voices. 🎶🇮🇹🇸🇰')">
                 <h2>VIVA LA MUSICA</h2>
                 <h3>June 28 – Banska Bystrica, Slovakia</h3>
                 <p>The open-air amphitheater in Banska Bystrica lights up with the passion and energy of Italian music. A vibrant celebration of rhythm, joy, and connection that brings the spirit of Italy to Slovakia through the power of live performance.</p>
             </section>
         </section>
     </section>
+
+    <section id="articleOverlay"></section>
+
 
     <footer>
         <div class="footer-left">
@@ -104,17 +82,20 @@ cade una stella...
         </div>
         <ul class="footer-right">
             <li>
-                <a>Band</a>
+                <a href="#band">Band</a>
             </li>
             <li>
-                <a>About</a>
+                <a href="#about">About</a>
             </li>
             <li>
-                <a>Contact</a>
+                <a href="#contact">Contact</a>
             </li>
         </ul>
     </footer>
 
+    <script src="script.js"></script>
 
 </body>
 </html>
+
+
