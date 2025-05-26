@@ -1,11 +1,11 @@
 /* Change the order of the pictures when clicking on the pictures */
 function switchImage() {
     // gets the first and last image
-    let img1 = document.getElementById("img1"); 
-    let img2 = document.getElementById("img2");
+    var img1 = document.getElementById("img1"); 
+    var img2 = document.getElementById("img2");
 
     // swithches the first and last image
-    let tempSrc = img1.src; 
+    var tempSrc = img1.src; 
     img1.src = img2.src;    
     img2.src = tempSrc;     
 }
@@ -13,26 +13,21 @@ function switchImage() {
 /* When clicking on the "Introduce yourself" button, get the text typed in the input and display it in the middle 
 of the following sentence: "Nice to meet you [put here the input data] 👋! Thanks for introducing yourself." */
 function getName() {
-    let name = document.getElementById("UserName").value; // gets the name given by the user
-    let contactSection = document.querySelector("#contact");
+    var name = document.getElementById("UserName").value; // gets the name given by the user
+    var contactSection = document.querySelector("#contact");
 
-    // makes the <p>, <input> & <button> elements disappear 
+    // makes the <input> and <button> elements disappear 
     document.getElementById("UserName").style.display = "none"; 
     document.querySelector("#contact button").style.display = "none";
-    document.querySelector("#contact p").style.display = "none";
 
-    // creates a <p> element to display the sentence
-    let newParagraph = document.createElement("p");
-    
-    // gets the sentence into the <p> element
-    newParagraph.textContent = "Nice to meet you " + name + " 👋! Thanks for introducing yourself.";
-    contactSection.appendChild(newParagraph); 
+    // chnge the content of the <p>
+    document.querySelector("#contact p").innerText = "Nice to meet you " + name + " 👋! Thanks for introducing yourself.";
 }
 
 /* It opens a modal window that will show the whole article */
 function article(title, dateLocation, text) {
     // gets the elements to display
-    let overlay = document.getElementById("articleOverlay");
+    var overlay = document.getElementById("articleOverlay");
 
     // makes the modal show
     overlay.style.display = "block";
@@ -41,13 +36,13 @@ function article(title, dateLocation, text) {
     document.body.classList.add("no-scroll");
 
     // creates the button close with an id and the closeOverlay event
-    let closeButton = document.createElement("button");
+    var closeButton = document.createElement("button");
     closeButton.id = "closeButton";
     closeButton.innerText = "close";
     closeButton.onclick = closeOverlay;
 
     // creates the main content for the article
-    let articleBox = document.createElement("div");
+    var articleBox = document.createElement("div");
     articleBox.id = "articleBox";
     articleBox.innerHTML = `
     <section class="alignment-controls">
